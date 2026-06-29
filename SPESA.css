@@ -1,0 +1,172 @@
+/* RESET GENERALE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+    --bg-main: #0b0f19;
+    --bg-card: #151f32;
+    --bg-input: #0b0f19;
+    --text-main: #f8fafc;
+    --text-muted: #64748b;
+    --primary: #10b981;
+    --primary-hover: #059669;
+    --danger: #f43f5e;
+    --danger-bg: rgba(244, 63, 94, 0.1);
+    --border: #223147;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+/* CONTENITORE */
+.container {
+    background-color: var(--bg-card);
+    width: 100%;
+    max-width: 420px;
+    padding: 28px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 24px;
+    background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* INPUT */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+input {
+    flex: 1;
+    padding: 14px;
+    background-color: var(--bg-input);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--text-main);
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: var(--primary);
+}
+
+input::placeholder {
+    color: var(--text-muted);
+}
+
+/* BOTTONI */
+.btn-add {
+    padding: 14px 20px;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-add:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-add:active {
+    transform: scale(0.97);
+}
+
+/* LISTA DEI PRODOTTI */
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li {
+    background-color: var(--bg-input);
+    padding: 14px 16px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--border);
+}
+
+li span {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-main);
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* AZIONI (MODIFICA / ELIMINA) */
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.actions button {
+    padding: 8px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-edit {
+    background-color: #1e293b;
+    color: #cbd5e1;
+}
+
+.btn-edit:hover {
+    background-color: #334155;
+    color: white;
+}
+
+.btn-delete {
+    background-color: var(--danger-bg);
+    color: var(--danger);
+}
+
+.btn-delete:hover {
+    background-color: var(--danger);
+    color: white;
+}
+
+.empty-state {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 14px;
+    padding: 16px 0;
+}
