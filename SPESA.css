@@ -8,13 +8,13 @@
 }
 
 :root {
-    --bg-main: #0b0f19;
-    --bg-card: #151f32;
-    --bg-input: #0b0f19;
+    --bg-main: #b0b0b0;
+    --bg-card: #000000;
+    --bg-input: #2c2c2d;
     --text-main: #f8fafc;
     --text-muted: #64748b;
-    --primary: #10b981;
-    --primary-hover: #059669;
+    --primary: #3710b9;
+    --primary-hover: #110596;
     --danger: #f43f5e;
     --danger-bg: rgba(244, 63, 94, 0.1);
     --border: #223147;
@@ -46,7 +46,7 @@ h2 {
     font-weight: 700;
     text-align: center;
     margin-bottom: 24px;
-    background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+    background: linear-gradient(135deg, #9484c8 0%, #9994cd 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
